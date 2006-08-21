@@ -5,34 +5,37 @@ Its goal is to provide an easy to use Key Management Tool,
 along with an easy to use interface for encryption operations.
 
 Runtime requirements:
-  cygwin-1.5.19-4
-  GConf2-2.10.1-1
-  gedit-2.12.1-1	(for GEdit plugin)
-  glib2-runtime-2.6.6-2
-  gpgme-1.0.2-1
-  gtk2-x11-runtime-2.6.10-1
-  libglade2-2.5.1-1
-  libgnome2-2.12.0.1-1
-  libgnomeui2-2.12.0-1
+  cygwin-1.5.21-1
+  GConf2-2.14.0-2
+  gdk-pixbuf2-2.8.20-1
+  glib2-2.10.3-1
+  libglade2-2.6.0-1
+  libgnome2-2.14.1-1
+  libgnomeui2-2.14.1-1
   libgpg-error-1.1-1
-  libsoup22_8-2.2.7-1
-  nautilus-2.12.2-1	(for Nautilus extension)
+  libgpgme11-1.0.3-1
+  libsoup22_8-2.2.93-1
+(gedit-seahorse)
+  gedit-2.14.3-1
+(nautilus-seahorse)
+  nautilus-2.14.1-1
 
 Build requirements:
  (besides corresponding -devel packages)
-  cygwin-1.5.19-4
-  autoconf2.5-2.59-3
+  cygwin-1.5.21-1
+  autoconf2.5-2.59-2
   automake1.9-1.9.6-1
-  binutils-20050610-1
+  binutils-20060709-1
+  cygport-0.2.5-1
   gawk-3.1.5-2
   gcc-core-3.4.4-1
-  intltool-0.34.2-1
-  libtool1.5-1.5.20-2
-  make-3.80-1
+  intltool-0.35.0-1
+  libtool1.5-1.5.22-1
+  make-3.81-1
   perl-5.8.7-5
   pkg-config-0.20-1
   scrollkeeper-0.3.14-2
-  sed-4.1.4-1
+  sed-4.1.5-1
 
 Canonical homepage:
   http://seahorse.sourceforge.net/
@@ -43,20 +46,21 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack seahorse-0.8.1-X-src.tar.bz2
+  unpack seahorse-0.8.2-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  ./seahorse-0.8.1-X.sh all
+  cygport ./seahorse-0.8.2-X.cygport all
 
 This will create:
-  /usr/src/seahorse-0.8.1-X-src.tar.bz2
-  /usr/src/seahorse-0.8.1-X.tar.bz2
+  /usr/src/seahorse-0.8.2-X-src.tar.bz2
+  /usr/src/seahorse-0.8.2-X.tar.bz2
 
 -------------------------------------------
 
-Files included in the binary package:
+Files included in the binary packages:
 
+(seahorse)
   /etc/gconf/schemas/seahorse-gedit.schemas
   /etc/gconf/schemas/seahorse.schemas
   /etc/postinstall/seahorse.sh
@@ -65,30 +69,26 @@ Files included in the binary package:
   /usr/bin/seahorse-agent.exe
   /usr/bin/seahorse-pgp-preferences.exe
   /usr/bin/seahorse.exe
-  /usr/lib/gedit-2/plugins/cygseahorse-pgp.dll
-  /usr/lib/gedit-2/plugins/libseahorse-pgp.la
-  /usr/lib/gedit-2/plugins/seahorse-pgp.gedit-plugin
+  /usr/lib/libseahorse-internal.dll.a
   /usr/lib/libseahorse-internal.la
-  /usr/lib/nautilus/extensions-1.0/cygnautilus-seahorse.dll
-  /usr/lib/nautilus/extensions-1.0/libnautilus-seahorse.la
   /usr/share/applications/seahorse-pgp-encrypted.desktop
   /usr/share/applications/seahorse-pgp-keys.desktop
   /usr/share/applications/seahorse-pgp-preferences.desktop
   /usr/share/applications/seahorse-pgp-signature.desktop
   /usr/share/applications/seahorse.desktop
   /usr/share/control-center-2.0/capplets/seahorse-pgp-preferences.desktop
-  /usr/share/doc/Cygwin/seahorse-0.8.1.README
-  /usr/share/doc/seahorse-0.8.1/AUTHORS
-  /usr/share/doc/seahorse-0.8.1/ChangeLog
-  /usr/share/doc/seahorse-0.8.1/COPYING
-  /usr/share/doc/seahorse-0.8.1/COPYING-DOCS
-  /usr/share/doc/seahorse-0.8.1/HACKING
-  /usr/share/doc/seahorse-0.8.1/INSTALL
-  /usr/share/doc/seahorse-0.8.1/MAINTAINERS
-  /usr/share/doc/seahorse-0.8.1/NEWS
-  /usr/share/doc/seahorse-0.8.1/README
-  /usr/share/doc/seahorse-0.8.1/THANKS
-  /usr/share/doc/seahorse-0.8.1/TODO
+  /usr/share/doc/Cygwin/seahorse-0.8.2.README
+  /usr/share/doc/seahorse-0.8.2/AUTHORS
+  /usr/share/doc/seahorse-0.8.2/COPYING
+  /usr/share/doc/seahorse-0.8.2/COPYING-DOCS
+  /usr/share/doc/seahorse-0.8.2/ChangeLog
+  /usr/share/doc/seahorse-0.8.2/HACKING
+  /usr/share/doc/seahorse-0.8.2/INSTALL
+  /usr/share/doc/seahorse-0.8.2/MAINTAINERS
+  /usr/share/doc/seahorse-0.8.2/NEWS
+  /usr/share/doc/seahorse-0.8.2/README
+  /usr/share/doc/seahorse-0.8.2/THANKS
+  /usr/share/doc/seahorse-0.8.2/TODO
   /usr/share/gnome/help/seahorse/C/figures/export.png
   /usr/share/gnome/help/seahorse/C/figures/file-manager.png
   /usr/share/gnome/help/seahorse/C/figures/generate.png
@@ -123,7 +123,6 @@ Files included in the binary package:
   /usr/share/locale/nb/LC_MESSAGES/seahorse.mo
   /usr/share/locale/ne/LC_MESSAGES/seahorse.mo
   /usr/share/locale/nl/LC_MESSAGES/seahorse.mo
-  /usr/share/locale/no/LC_MESSAGES/seahorse.mo
   /usr/share/locale/pa/LC_MESSAGES/seahorse.mo
   /usr/share/locale/pl/LC_MESSAGES/seahorse.mo
   /usr/share/locale/pt/LC_MESSAGES/seahorse.mo
@@ -138,11 +137,12 @@ Files included in the binary package:
   /usr/share/locale/sv/LC_MESSAGES/seahorse.mo
   /usr/share/locale/tr/LC_MESSAGES/seahorse.mo
   /usr/share/locale/uk/LC_MESSAGES/seahorse.mo
+  /usr/share/locale/vi/LC_MESSAGES/seahorse.mo
   /usr/share/locale/zh_CN/LC_MESSAGES/seahorse.mo
   /usr/share/locale/zh_TW/LC_MESSAGES/seahorse.mo
-  /usr/share/mime/packages/seahorse.xml
   /usr/share/mime-info/seahorse.keys
   /usr/share/mime-info/seahorse.mime
+  /usr/share/mime/packages/seahorse.xml
   /usr/share/omf/seahorse/seahorse-C.omf
   /usr/share/pixmaps/seahorse-key.png
   /usr/share/pixmaps/seahorse-secret.png
@@ -174,9 +174,22 @@ Files included in the binary package:
   /usr/share/seahorse/glade/seahorse-signatures.glade
   /usr/share/seahorse/glade/seahorse-signer.glade
 
+(gedit-seahorse)
+  /usr/lib/gedit-2/plugins/cygseahorse-pgp.dll
+  /usr/lib/gedit-2/plugins/libseahorse-pgp.la
+  /usr/lib/gedit-2/plugins/seahorse-pgp.gedit-plugin
+
+(nautilus-seahorse)
+  /usr/lib/nautilus/extensions-1.0/cygnautilus-seahorse.dll
+  /usr/lib/nautilus/extensions-1.0/libnautilus-seahorse.la
+
 --------------------
 
 Port Notes:
+
+----- version 0.8.2-1 -----
+Version bump.
+Broke out gedit and nautilus plugin packages.
 
 ----- version 0.8.1-1 -----
 Version bump.
