@@ -1,5 +1,5 @@
 category: Gnome
-requires: cygwin seahorse nautilus
+requires: cygwin glib2 libintl8 seahorse nautilus
 external-source: seahorse
 sdesc: "GnuPG key manager for GNOME (Nautilus plugin)"
 ldesc: "Seahorse is a graphical interface for Gnu Privacy Guard.

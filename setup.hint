@@ -1,5 +1,5 @@
 category: Utils Gnome
-requires: cygwin GConf2 gdk-pixbuf2 glib2 gnupg gtk2-x11 libglade2 libgnome2 libgnomeui2 libgpg-error libgpgme11 libsoup22_8
+requires: cygwin GConf2 atk glib2 gnome-keyring gnome-panel gnome-vfs2 gnupg gtk2-x11 libbonoboui2 libdbus-glib_1_2 libglade2 libgnome2 libgnomeui2 libgpgme11 libintl8 libnotify libopenldap2_3_0 libsoup22_8 pango
 sdesc: "GnuPG key manager for GNOME"
 ldesc: "Seahorse is a graphical interface for Gnu Privacy Guard.
 Its goal is to provide an easy to use Key Management Tool,
