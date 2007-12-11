@@ -6,31 +6,30 @@ along with an easy to use interface for encryption operations.
 
 Runtime requirements:
   cygwin-1.5.24-2
-  GConf2-2.18.0.1-1
-  atk-1.18.0-1
-  gdk-pixbuf2-2.10.13-1
-  glib2-2.12.12-2
-  gnome-keyring-0.8.1-1
-  gnome-panel-2.18.3-1
-  gnome-vfs2-2.18.1-1
-  gnupg-1.4.x
-  gtk2-x11-2.10.13-1
-  libbonoboui2-2.18.0-1
-  libdbus-glib_1_2-0.73-1
+  GConf2-2.20.1-1
+  atk-1.20.0-1
+  gdk-pixbuf2-2.12.2-1
+  glib2-2.14.4-1
+  gnome-keyring-2.20.2-1
+  gnome-panel-2.20.2-1
+  gnome-vfs2-2.20.1-1
+  gtk2-x11-2.12.2-1
+  libbonoboui2-2.20.0-1
+  libdbus-glib_1_2-0.74-1
   libdbus1_3-1.0.2-1
-  libglade2-2.6.1-1
-  libgnome2-2.18.0-1
-  libgnomeui2-2.18.1-1
-  libgpgme11-1.1.4-1
+  libglade2-2.6.2-1
+  libgnome2-2.20.1.1-1
+  libgnomeui2-2.20.1.1-1
+  libgpgme11-1.1.5-1
   libintl8-0.15-1
   libnotify-0.4.4-1
-  libopenldap2_3_0-2.3.30-1
-  libsoup22_8-2.2.100-1
-  pango-1.16.4-1
+  libopenldap2_3_0-2.3.36-1
+  libsoup22_8-2.2.104-1
+  pango-1.18.3-1
 (gedit-seahorse)
-  gedit-2.18.2-1
+  gedit-2.20.4-1
 (nautilus-seahorse)
-  nautilus-2.18.3-1
+  nautilus-2.20.0-1
 
 Build requirements:
  (besides corresponding -devel packages)
@@ -58,19 +57,19 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack seahorse-1.0.1-X-src.tar.bz2
+  unpack seahorse-2.20.1-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./seahorse-1.0.1-X.cygport all
+  cygport ./seahorse-2.20.1-X.cygport all
 
 This will create:
-  /usr/src/gedit-seahorse-1.0.1-X.tar.bz2
-  /usr/src/libcryptui-devel-1.0.1-X.tar.bz2
-  /usr/src/libcryptui0-1.0.1-X.tar.bz2
-  /usr/src/nautilus-seahorse-1.0.1-X.tar.bz2
-  /usr/src/seahorse-1.0.1-X-src.tar.bz2
-  /usr/src/seahorse-1.0.1-X.tar.bz2
+  /usr/src/gedit-seahorse-2.20.1-X.tar.bz2
+  /usr/src/libcryptui-devel-2.20.1-X.tar.bz2
+  /usr/src/libcryptui0-2.20.1-X.tar.bz2
+  /usr/src/nautilus-seahorse-2.20.1-X.tar.bz2
+  /usr/src/seahorse-2.20.1-X-src.tar.bz2
+  /usr/src/seahorse-2.20.1-X.tar.bz2
 
 -------------------------------------------
 
@@ -95,23 +94,27 @@ Files included in the binary packages:
   /usr/share/applications/seahorse-pgp-preferences.desktop
   /usr/share/applications/seahorse-pgp-signature.desktop
   /usr/share/applications/seahorse.desktop
-  /usr/share/control-center-2.0/capplets/seahorse-pgp-preferences.desktop
   /usr/share/dbus-1/services/org.gnome.seahorse.service
-  /usr/share/doc/Cygwin/seahorse-1.0.1.README
-  /usr/share/doc/seahorse-1.0.1/AUTHORS
-  /usr/share/doc/seahorse-1.0.1/COPYING
-  /usr/share/doc/seahorse-1.0.1/COPYING-DOCS
-  /usr/share/doc/seahorse-1.0.1/ChangeLog
-  /usr/share/doc/seahorse-1.0.1/HACKING
-  /usr/share/doc/seahorse-1.0.1/INSTALL
-  /usr/share/doc/seahorse-1.0.1/MAINTAINERS
-  /usr/share/doc/seahorse-1.0.1/NEWS
-  /usr/share/doc/seahorse-1.0.1/README
-  /usr/share/doc/seahorse-1.0.1/THANKS
-  /usr/share/doc/seahorse-1.0.1/TODO
+  /usr/share/doc/seahorse-2.20.1/AUTHORS
+  /usr/share/doc/seahorse-2.20.1/COPYING
+  /usr/share/doc/seahorse-2.20.1/COPYING-DOCS
+  /usr/share/doc/seahorse-2.20.1/ChangeLog
+  /usr/share/doc/seahorse-2.20.1/HACKING
+  /usr/share/doc/seahorse-2.20.1/INSTALL
+  /usr/share/doc/seahorse-2.20.1/MAINTAINERS
+  /usr/share/doc/seahorse-2.20.1/NEWS
+  /usr/share/doc/seahorse-2.20.1/README
+  /usr/share/doc/seahorse-2.20.1/THANKS
+  /usr/share/doc/seahorse-2.20.1/TODO
   /usr/share/gnome-2.0/ui/GNOME_SeahorseApplet.xml
   /usr/share/gnome/help/seahorse-applet/C/legal.xml
   /usr/share/gnome/help/seahorse-applet/C/seahorse-applet.xml
+  /usr/share/gnome/help/seahorse-applet/es/seahorse-applet.xml
+  /usr/share/gnome/help/seahorse-applet/fr/seahorse-applet.xml
+  /usr/share/gnome/help/seahorse-applet/it/seahorse-applet.xml
+  /usr/share/gnome/help/seahorse-applet/oc/seahorse-applet.xml
+  /usr/share/gnome/help/seahorse-applet/sv/seahorse-applet.xml
+  /usr/share/gnome/help/seahorse-applet/vi/seahorse-applet.xml
   /usr/share/gnome/help/seahorse/C/figures/export.png
   /usr/share/gnome/help/seahorse/C/figures/file-manager.png
   /usr/share/gnome/help/seahorse/C/figures/generate.png
@@ -178,6 +181,19 @@ Files included in the binary packages:
   /usr/share/gnome/help/seahorse/it/figures/signature.png
   /usr/share/gnome/help/seahorse/it/figures/text-editor.png
   /usr/share/gnome/help/seahorse/it/seahorse.xml
+  /usr/share/gnome/help/seahorse/oc/figures/export.png
+  /usr/share/gnome/help/seahorse/oc/figures/file-manager.png
+  /usr/share/gnome/help/seahorse/oc/figures/generate.png
+  /usr/share/gnome/help/seahorse/oc/figures/import.png
+  /usr/share/gnome/help/seahorse/oc/figures/key-manager.png
+  /usr/share/gnome/help/seahorse/oc/figures/key-properties.png
+  /usr/share/gnome/help/seahorse/oc/figures/passphrase.png
+  /usr/share/gnome/help/seahorse/oc/figures/preferences.png
+  /usr/share/gnome/help/seahorse/oc/figures/recipients.png
+  /usr/share/gnome/help/seahorse/oc/figures/seahorse-window.png
+  /usr/share/gnome/help/seahorse/oc/figures/signature.png
+  /usr/share/gnome/help/seahorse/oc/figures/text-editor.png
+  /usr/share/gnome/help/seahorse/oc/seahorse.xml
   /usr/share/gnome/help/seahorse/sv/figures/export.png
   /usr/share/gnome/help/seahorse/sv/figures/file-manager.png
   /usr/share/gnome/help/seahorse/sv/figures/generate.png
@@ -191,6 +207,19 @@ Files included in the binary packages:
   /usr/share/gnome/help/seahorse/sv/figures/signature.png
   /usr/share/gnome/help/seahorse/sv/figures/text-editor.png
   /usr/share/gnome/help/seahorse/sv/seahorse.xml
+  /usr/share/gnome/help/seahorse/vi/figures/export.png
+  /usr/share/gnome/help/seahorse/vi/figures/file-manager.png
+  /usr/share/gnome/help/seahorse/vi/figures/generate.png
+  /usr/share/gnome/help/seahorse/vi/figures/import.png
+  /usr/share/gnome/help/seahorse/vi/figures/key-manager.png
+  /usr/share/gnome/help/seahorse/vi/figures/key-properties.png
+  /usr/share/gnome/help/seahorse/vi/figures/passphrase.png
+  /usr/share/gnome/help/seahorse/vi/figures/preferences.png
+  /usr/share/gnome/help/seahorse/vi/figures/recipients.png
+  /usr/share/gnome/help/seahorse/vi/figures/seahorse-window.png
+  /usr/share/gnome/help/seahorse/vi/figures/signature.png
+  /usr/share/gnome/help/seahorse/vi/figures/text-editor.png
+  /usr/share/gnome/help/seahorse/vi/seahorse.xml
   /usr/share/icons/hicolor/22x22/apps/seahorse-preferences.svg
   /usr/share/icons/hicolor/22x22/apps/seahorse.svg
   /usr/share/icons/hicolor/48x48/apps/seahorse-applet.png
@@ -201,7 +230,9 @@ Files included in the binary packages:
   /usr/share/icons/hicolor/scalable/apps/seahorse.svg
   /usr/share/locale/ar/LC_MESSAGES/seahorse.mo
   /usr/share/locale/az/LC_MESSAGES/seahorse.mo
+  /usr/share/locale/be@latin/LC_MESSAGES/seahorse.mo
   /usr/share/locale/bg/LC_MESSAGES/seahorse.mo
+  /usr/share/locale/bn/LC_MESSAGES/seahorse.mo
   /usr/share/locale/bn_IN/LC_MESSAGES/seahorse.mo
   /usr/share/locale/ca/LC_MESSAGES/seahorse.mo
   /usr/share/locale/cs/LC_MESSAGES/seahorse.mo
@@ -219,30 +250,37 @@ Files included in the binary packages:
   /usr/share/locale/gl/LC_MESSAGES/seahorse.mo
   /usr/share/locale/gu/LC_MESSAGES/seahorse.mo
   /usr/share/locale/he/LC_MESSAGES/seahorse.mo
+  /usr/share/locale/hi/LC_MESSAGES/seahorse.mo
   /usr/share/locale/hr/LC_MESSAGES/seahorse.mo
   /usr/share/locale/hu/LC_MESSAGES/seahorse.mo
   /usr/share/locale/it/LC_MESSAGES/seahorse.mo
   /usr/share/locale/ja/LC_MESSAGES/seahorse.mo
   /usr/share/locale/ko/LC_MESSAGES/seahorse.mo
   /usr/share/locale/lt/LC_MESSAGES/seahorse.mo
+  /usr/share/locale/lv/LC_MESSAGES/seahorse.mo
   /usr/share/locale/mk/LC_MESSAGES/seahorse.mo
   /usr/share/locale/ml/LC_MESSAGES/seahorse.mo
   /usr/share/locale/ms/LC_MESSAGES/seahorse.mo
   /usr/share/locale/nb/LC_MESSAGES/seahorse.mo
   /usr/share/locale/ne/LC_MESSAGES/seahorse.mo
   /usr/share/locale/nl/LC_MESSAGES/seahorse.mo
+  /usr/share/locale/oc/LC_MESSAGES/seahorse.mo
+  /usr/share/locale/or/LC_MESSAGES/seahorse.mo
   /usr/share/locale/pa/LC_MESSAGES/seahorse.mo
   /usr/share/locale/pl/LC_MESSAGES/seahorse.mo
   /usr/share/locale/pt/LC_MESSAGES/seahorse.mo
   /usr/share/locale/pt_BR/LC_MESSAGES/seahorse.mo
   /usr/share/locale/ru/LC_MESSAGES/seahorse.mo
   /usr/share/locale/rw/LC_MESSAGES/seahorse.mo
+  /usr/share/locale/si/LC_MESSAGES/seahorse.mo
   /usr/share/locale/sk/LC_MESSAGES/seahorse.mo
   /usr/share/locale/sl/LC_MESSAGES/seahorse.mo
   /usr/share/locale/sq/LC_MESSAGES/seahorse.mo
   /usr/share/locale/sr/LC_MESSAGES/seahorse.mo
   /usr/share/locale/sr@Latn/LC_MESSAGES/seahorse.mo
   /usr/share/locale/sv/LC_MESSAGES/seahorse.mo
+  /usr/share/locale/ta/LC_MESSAGES/seahorse.mo
+  /usr/share/locale/te/LC_MESSAGES/seahorse.mo
   /usr/share/locale/th/LC_MESSAGES/seahorse.mo
   /usr/share/locale/tr/LC_MESSAGES/seahorse.mo
   /usr/share/locale/uk/LC_MESSAGES/seahorse.mo
@@ -255,12 +293,20 @@ Files included in the binary packages:
   /usr/share/man/man1/seahorse-tool.1.gz
   /usr/share/mime/packages/seahorse.xml
   /usr/share/omf/seahorse-applet/seahorse-applet-C.omf
+  /usr/share/omf/seahorse-applet/seahorse-applet-es.omf
+  /usr/share/omf/seahorse-applet/seahorse-applet-fr.omf
+  /usr/share/omf/seahorse-applet/seahorse-applet-it.omf
+  /usr/share/omf/seahorse-applet/seahorse-applet-oc.omf
+  /usr/share/omf/seahorse-applet/seahorse-applet-sv.omf
+  /usr/share/omf/seahorse-applet/seahorse-applet-vi.omf
   /usr/share/omf/seahorse/seahorse-C.omf
   /usr/share/omf/seahorse/seahorse-en_GB.omf
   /usr/share/omf/seahorse/seahorse-es.omf
   /usr/share/omf/seahorse/seahorse-fr.omf
   /usr/share/omf/seahorse/seahorse-it.omf
+  /usr/share/omf/seahorse/seahorse-oc.omf
   /usr/share/omf/seahorse/seahorse-sv.omf
+  /usr/share/omf/seahorse/seahorse-vi.omf
   /usr/share/pixmaps/seahorse-applet.svg
   /usr/share/pixmaps/seahorse-preferences.png
   /usr/share/pixmaps/seahorse.png
@@ -272,10 +318,12 @@ Files included in the binary packages:
   /usr/share/pixmaps/seahorse/22x22/seahorse-key-personal.png
   /usr/share/pixmaps/seahorse/22x22/seahorse-key-ssh.png
   /usr/share/pixmaps/seahorse/22x22/seahorse-key.png
+  /usr/share/pixmaps/seahorse/22x22/seahorse-person.png
   /usr/share/pixmaps/seahorse/22x22/seahorse-preferences.png
   /usr/share/pixmaps/seahorse/22x22/seahorse-share-keys.png
   /usr/share/pixmaps/seahorse/22x22/seahorse-sign-bad.png
   /usr/share/pixmaps/seahorse/22x22/seahorse-sign-ok.png
+  /usr/share/pixmaps/seahorse/22x22/seahorse-sign.png
   /usr/share/pixmaps/seahorse/22x22/seahorse.png
   /usr/share/pixmaps/seahorse/48x48/seahorse-applet-encrypted.png
   /usr/share/pixmaps/seahorse/48x48/seahorse-applet-key.png
@@ -366,6 +414,9 @@ Files included in the binary packages:
 --------------------
 
 Port Notes:
+
+----- version 2.20.1-1 -----
+Version bump for GNOME 2.20.
 
 ----- version 1.0.1-1 -----
 Major version bump for GNOME 2.18.
