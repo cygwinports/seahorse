@@ -5,18 +5,18 @@ Its goal is to provide an easy to use Key Management Tool,
 along with an easy to use interface for encryption operations.
 
 Runtime requirements:
-  cygwin-1.5.25-11
+  cygwin-1.5.25-15
   atk-1.22.0-1
   GConf2-2.22.0-1
-  gdk-pixbuf2-2.12.9-1
+  gdk-pixbuf2-2.12.10-1
   glib2-2.16.3-1
   gnome-keyring-2.22.2-1
   gnome-panel-2.22.2-1
   gnome-vfs2-2.22.0-1
-  gtk2-x11-2.12.9-1
+  gtk2-x11-2.12.10-1
   libbonoboui2-2.20.0-1
-  libdbus-glib_1_2-0.74-1
-  libdbus1_3-1.0.2-1
+  libdbus-glib_1_2-0.76-1
+  libdbus1_3-1.2.1-1
   libglade2-2.6.2-1
   libgnome2-2.22.0-1
   libgnomeui2-2.22.1-1
@@ -36,15 +36,15 @@ Build requirements:
   autoconf2.5-2.61-1
   automake1.10-1.10.1-1
   binutils-20080523-1
-  cygport-0.3.11-1
+  cygport-0.3.12-1
   gawk-3.1.6-1
   gcc-core-3.4.4-1
   gnome-common-2.20.0-2
   intltool-0.37.1-1
   libtool-2.2.2-2
   make-3.81-1
-  perl-5.10.0-3
-  pkg-config-0.21-1
+  perl-5.10.0-4
+  pkg-config-0.23a-2
   rarian-0.8.0-1
   sed-4.1.5-1
 
@@ -57,19 +57,19 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack seahorse-2.22.2-X-src.tar.bz2
+  unpack seahorse-2.22.3-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./seahorse-2.22.2-X.cygport all
+  cygport ./seahorse-2.22.3-X.cygport all
 
 This will create:
-  /usr/src/gedit-seahorse-2.22.2-X.tar.bz2
-  /usr/src/libcryptui-devel-2.22.2-X.tar.bz2
-  /usr/src/libcryptui0-2.22.2-X.tar.bz2
-  /usr/src/nautilus-seahorse-2.22.2-X.tar.bz2
-  /usr/src/seahorse-2.22.2-X-src.tar.bz2
-  /usr/src/seahorse-2.22.2-X.tar.bz2
+  /usr/src/gedit-seahorse-2.22.3-X.tar.bz2
+  /usr/src/libcryptui-devel-2.22.3-X.tar.bz2
+  /usr/src/libcryptui0-2.22.3-X.tar.bz2
+  /usr/src/nautilus-seahorse-2.22.3-X.tar.bz2
+  /usr/src/seahorse-2.22.3-X-src.tar.bz2
+  /usr/src/seahorse-2.22.3-X.tar.bz2
 
 -------------------------------------------
 
@@ -95,17 +95,17 @@ Files included in the binary packages:
   /usr/share/applications/seahorse-pgp-signature.desktop
   /usr/share/applications/seahorse.desktop
   /usr/share/dbus-1/services/org.gnome.seahorse.service
-  /usr/share/doc/seahorse-2.22.2/AUTHORS
-  /usr/share/doc/seahorse-2.22.2/COPYING
-  /usr/share/doc/seahorse-2.22.2/COPYING-DOCS
-  /usr/share/doc/seahorse-2.22.2/ChangeLog
-  /usr/share/doc/seahorse-2.22.2/HACKING
-  /usr/share/doc/seahorse-2.22.2/INSTALL
-  /usr/share/doc/seahorse-2.22.2/MAINTAINERS
-  /usr/share/doc/seahorse-2.22.2/NEWS
-  /usr/share/doc/seahorse-2.22.2/README
-  /usr/share/doc/seahorse-2.22.2/THANKS
-  /usr/share/doc/seahorse-2.22.2/TODO
+  /usr/share/doc/seahorse-2.22.3/AUTHORS
+  /usr/share/doc/seahorse-2.22.3/COPYING
+  /usr/share/doc/seahorse-2.22.3/COPYING-DOCS
+  /usr/share/doc/seahorse-2.22.3/ChangeLog
+  /usr/share/doc/seahorse-2.22.3/HACKING
+  /usr/share/doc/seahorse-2.22.3/INSTALL
+  /usr/share/doc/seahorse-2.22.3/MAINTAINERS
+  /usr/share/doc/seahorse-2.22.3/NEWS
+  /usr/share/doc/seahorse-2.22.3/README
+  /usr/share/doc/seahorse-2.22.3/THANKS
+  /usr/share/doc/seahorse-2.22.3/TODO
   /usr/share/gnome-2.0/ui/GNOME_SeahorseApplet.xml
   /usr/share/gnome/help/seahorse-applet/C/legal.xml
   /usr/share/gnome/help/seahorse-applet/C/seahorse-applet.xml
@@ -435,6 +435,9 @@ Files included in the binary packages:
 --------------------
 
 Port Notes:
+
+----- version 2.22.3-1 -----
+Version bump.
 
 ----- version 2.22.2-1 -----
 Version bump for GNOME 2.22.
