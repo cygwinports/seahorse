@@ -1,0 +1,11 @@
+--- origsrc/seahorse-2.24.1/libcryptui/Makefile.am	2008-09-16 17:10:21.000000000 -0500
++++ src/seahorse-2.24.1/libcryptui/Makefile.am	2008-12-15 18:11:58.962625000 -0600
+@@ -37,7 +37,7 @@
+     $(BUILT_SOURCES)
+     
+ libcryptui_la_LDFLAGS = \
+-    -version-info $(LIBCRYPTUI_LT_RELEASE)
++    -version-info $(LIBCRYPTUI_LT_RELEASE) -no-undefined
+     
+ libcryptui_la_LIBADD = $(LIBCRYPTUI_LIBS) 
+ 

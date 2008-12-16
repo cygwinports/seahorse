@@ -1,0 +1,17 @@
+inherit gnome2
+
+DESCRIPTION="GNOME GnuPG keyring manager"
+HOMEPAGE="http://seahorse.sourceforge.net/"
+
+PATCH_URI="2.24-no-undefined.patch"
+
+PKG_NAMES="${PN} libcryptui0 libcryptui-devel"
+seahorse_CONTENTS="etc/ usr/bin/*.exe usr/lib/${PN}/ usr/share/"
+libcryptui0_CONTENTS="usr/bin/cygcryptui-0.dll"
+libcryptui_devel_CONTENTS='usr/include/ usr/lib/lib* usr/lib/pkgconfig/'
+
+# sharing == avahi
+CYGCONF_ARGS="
+	--disable-sharing
+	--disable-update-mime-database
+"
