@@ -5,24 +5,24 @@ Its goal is to provide an easy to use Key Management Tool,
 along with an easy to use interface for encryption operations.
 
 Runtime requirements:
-  cygwin-1.7.0-44
+  cygwin-1.7.0-45
   libatk1.0_0-1.26.0-1
   libdbus-glib_1_2-0.80-10
   libdbus1_3-1.2.12-10
   libgcc1-4.3.2-2
   libgconf2_4-2.26.0-1
   libgcr0-2.26.0-1
-  libgdk_pixbuf2.0_0-2.16.0-1
+  libgdk_pixbuf2.0_0-2.16.1-1
   libglade2.0_0-2.6.4-1
-  libglib2.0_0-2.20.0-1
+  libglib2.0_0-2.20.1-1
   libgnome-keyring0-2.26.0-1
   libgp11_0-2.26.0-1
   libgpgme11-1.1.8-1
-  libgtk2.0_0-2.16.0-1
+  libgtk2.0_0-2.16.1-1
   libintl8-0.17-10
   libnotify1-0.4.5-10
   libopenldap2_3_0-2.3.43-1
-  libpango1.0_0-1.24.0-1
+  libpango1.0_0-1.24.1-1
   libsoup2.4_1-2.26.0-1
 
 Build requirements:
@@ -37,7 +37,7 @@ Build requirements:
   intltool-0.40.6-1
   libtool-2.2.7a-12
   make-3.81-2
-  pkg-config-0.23a-2
+  pkg-config-0.23b-10
   rarian-0.8.1-10
   sed-4.1.5-2
 
@@ -50,17 +50,17 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack seahorse-2.26.0-X-src.tar.bz2
+  unpack seahorse-2.26.1-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./seahorse-2.26.0-X.cygport all
+  cygport ./seahorse-2.26.1-X.cygport all
 
 This will create:
-  /usr/src/libcryptui-devel-2.26.0-X.tar.bz2
-  /usr/src/libcryptui0-2.26.0-X.tar.bz2
-  /usr/src/seahorse-2.26.0-X-src.tar.bz2
-  /usr/src/seahorse-2.26.0-X.tar.bz2
+  /usr/src/libcryptui-devel-2.26.1-X.tar.bz2
+  /usr/src/libcryptui0-2.26.1-X.tar.bz2
+  /usr/src/seahorse-2.26.1-X-src.tar.bz2
+  /usr/src/seahorse-2.26.1-X.tar.bz2
 
 -------------------------------------------
 
@@ -292,6 +292,9 @@ Files included in the binary packages:
 --------------------
 
 Port Notes:
+
+----- version 2.26.1-1 -----
+Version bump.
 
 ----- version 2.26.0-1 -----
 Initial release of GNOME 2.26 for Cygwin 1.7.
