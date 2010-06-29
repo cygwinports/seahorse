@@ -5,10 +5,11 @@ HOMEPAGE="http://seahorse.sourceforge.net/"
 
 PATCH_URI="2.24-no-undefined.patch"
 
-PKG_NAMES="${PN} libcryptui0 libcryptui-devel"
-seahorse_CONTENTS="etc/ usr/bin/*.exe usr/lib/${PN}/ usr/share/"
+PKG_NAMES="${PN} libcryptui0 libcryptui-devel girepository-CryptUI0.0"
+seahorse_CONTENTS="--exclude=gir-1.0 etc/ usr/bin/*.exe usr/lib/${PN}/ usr/share/"
 libcryptui0_CONTENTS="usr/bin/cygcryptui-0.dll"
 libcryptui_devel_CONTENTS='usr/include/ usr/lib/lib* usr/lib/pkgconfig/'
+girepository_CryptUI0_0_CONTENTS="usr/*/gir*/CryptUI-0.0.*"
 
 # sharing == avahi
 CYGCONF_ARGS="
