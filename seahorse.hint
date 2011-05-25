@@ -1,6 +1,7 @@
 category: Gnome
-requires: libatk1.0_0 libcryptui0 libdbus-glib_1_2 libdbus1_3 libgconf2_4 libgcr0 libgdk_pixbuf2.0_0 libglib2.0_0 libgnome-keyring0 libgp11_0 libgpgme11 libgtk2.0_0 libintl8 libnotify1 libopenldap2_3_0 libpango1.0_0 libsoup2.4_1
-sdesc: "GnuPG key manager for GNOME"
-ldesc: "Seahorse is a graphical interface for Gnu Privacy Guard.
-Its goal is to provide an easy to use Key Management Tool,
+requires: libatk1.0_0 libcryptui0 libdbus-glib_1_2 libdbus1_3 libgconf2_4 libgcr3_0 libgdk_pixbuf2.0_0 libglib2.0_0 libgnome-keyring0 libgpgme11 libgtk3_0 libintl8 libnotify4 libopenldap2_3_0 libpango1.0_0 libsoup2.4_1
+sdesc: "GPG/SSH key manager for GNOME"
+ldesc: "Seahorse is a graphical interface for managing and using
+encryption keys. Currently it supports PGP keys (using GPG/GPGME) and
+SSH keys. Its goal is to provide an easy to use Key Management Tool,
 along with an easy to use interface for encryption operations."

@@ -1,7 +1,8 @@
 category: Gnome
-requires: libcryptui0 libdbus-glib_1-devel libgconf2-devel libglib2.0-devel libgtk2.0-devel libpango1.0-devel
+requires: libcryptui0 libdbus-glib_1-devel libgconf2-devel libglib2.0-devel libgtk3-devel libpango1.0-devel
 external-source: seahorse
-sdesc: "GTK+ GnuPG key selection widget library (runtime)"
-ldesc: "Seahorse is a graphical interface for Gnu Privacy Guard.
-Its goal is to provide an easy to use Key Management Tool,
+sdesc: "GTK+ GPG/SSH key selection widget library (runtime)"
+ldesc: "Seahorse is a graphical interface for managing and using
+encryption keys. Currently it supports PGP keys (using GPG/GPGME) and
+SSH keys. Its goal is to provide an easy to use Key Management Tool,
 along with an easy to use interface for encryption operations."
