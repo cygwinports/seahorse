@@ -12,8 +12,4 @@ libcryptui0_CONTENTS="usr/bin/cygcryptui-0.dll"
 libcryptui_devel_CONTENTS='usr/include/ usr/lib/lib* usr/lib/pkgconfig/ usr/share/gtk-doc/'
 girepository_CryptUI0_0_CONTENTS="usr/*/gir*/CryptUI-0.0.*"
 
-# sharing == avahi
-CYGCONF_ARGS="
-	--disable-sharing
-	--disable-update-mime-database
-"
+CYGCONF_ARGS="--disable-update-mime-database"
