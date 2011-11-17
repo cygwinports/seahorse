@@ -1,0 +1,14 @@
+inherit gnome2
+
+DESCRIPTION="GNOME GnuPG keyring manager"
+HOMEPAGE="http://seahorse.sourceforge.net/"
+
+DEPEND="gnome-common gnome-doc-utils intltool
+	pkgconfig(avahi-glib)
+	pkgconfig(gck-1)
+	pkgconfig(gcr-3)
+	pkgconfig(gnome-keyring-1)
+	pkgconfig(gtk+-3.0)
+	pkgconfig(libsoup-2.4)"
+
+CYGCONF_ARGS="--disable-update-mime-database"
