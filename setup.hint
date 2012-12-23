@@ -1,7 +1,0 @@
-category: Gnome
-requires: libatk1.0_0 libavahi-client3 libavahi-common3 libavahi-glib1 libgck1_0 libgcr3_1 libgdk_pixbuf2.0_0 libglib2.0_0 libgnome-keyring0 libgpgme11 libgtk3_0 libintl8 libopenldap2_3_0 libsoup2.4_1
-sdesc: "GPG/SSH key manager for GNOME"
-ldesc: "Seahorse is a graphical interface for managing and using
-encryption keys. Currently it supports PGP keys (using GPG/GPGME) and
-SSH keys. Its goal is to provide an easy to use Key Management Tool,
-along with an easy to use interface for encryption operations."
