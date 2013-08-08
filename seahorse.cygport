@@ -1,7 +1,7 @@
 inherit gnome2
 
 NAME="seahorse"
-VERSION=3.6.3
+VERSION=3.8.2
 RELEASE=1
 CATEGORY="GNOME"
 SUMMARY="GPG/SSH key manager for GNOME"
