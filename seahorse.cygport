@@ -1,7 +1,7 @@
 inherit gnome2
 
 NAME="seahorse"
-VERSION=3.8.2
+VERSION=3.10.2
 RELEASE=1
 CATEGORY="GNOME"
 SUMMARY="GPG/SSH key manager for GNOME"
@@ -10,6 +10,8 @@ encryption keys. Currently it supports PGP keys (using GPG/GPGME) and
 SSH keys. Its goal is to provide an easy to use Key Management Tool,
 along with an easy to use interface for encryption operations."
 HOMEPAGE="http://seahorse.sourceforge.net/"
+
+PATCH_URI="3.10.2-compile.patch"
 
 DEPEND="gnome-common gnome-doc-utils intltool
 	pkgconfig(avahi-glib)
